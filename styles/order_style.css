@@ -1,0 +1,113 @@
+﻿body {
+    background-color: #edf2fb;
+    background-image: linear-gradient(#edf2fb, #abc4ff);
+}
+
+input[type=text], select, input[type=tel], input[type=email], input[type=number] {
+    border: 1px solid #ccc;
+    width: 50%;
+    float: right;
+    border-radius: 4px;
+    resize: vertical;
+    padding: 12px;
+}
+
+
+
+
+/* Yellow bacground color wor each input which get focosed */
+input[type=text]:focus {
+    background-color: #fcfc9a;
+}
+
+    input[type=number]:focus {
+        background-color: #fcfc9a;
+    }
+
+    input[type=email]:focus {
+        background-color: #fcfc9a;
+    }
+
+    input[type=tel]:focus {
+        background-color: #fcfc9a;
+    }
+
+    textarea:focus {
+        background-color: #fcfc9a;
+    }
+
+    select:focus {
+        background-color: #fcfc9a;
+    }
+
+
+    legend {
+        font-weight: bold;
+    }
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    margin-top: 10px;
+    background-color: #4CAF59;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    
+}
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+
+input[type=reset] {
+    margin-top: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color:gainsboro;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit], input[type=reset], textarea {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    input[type=submit], input[type=reset] {
+        margin-top: 10px;
+    }
+}
+

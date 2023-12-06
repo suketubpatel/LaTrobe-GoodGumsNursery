@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Site map - Good Gums Nursery - By Suketu Patel</title>
+
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/sitemap_style.css" rel="stylesheet" />
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body id="topOfPage">
+    <!--Header part contain logo and company name and site navigation manu-->
+    <header>
+        <div id="mainHeading">
+            <a id="logoImage" href="index.html"><img src="images/Company_Logo/GoodGums-logo-sm.png" alt="Good Gums company logo" /></a>
+            <h1>Good Gums Nursery</h1>
+        </div>
+        <nav id="myHd_nav" class="hd_nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="order.html">Order</a>
+            <a class="active" href="sitemap.html">Site map</a>
+            <a href="about.html">About Us</a>
+
+            <!-- Bar menu clicked run javascript -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Site Map</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="products.html">Products</a>
+                    <button class="dropDownMenu" title="Drop Down Menu">+</button>
+                    <ul  class="innerList">
+                        <li class="innerListItems"><a href="products.html#availablePlants">Available Plants</a></li>
+                        <li class="innerListItems"><a href="products.html#popularAuPlants">Popular Australian Plants</a></li>
+                        <li class="innerListItems"><a href="products.html#recommandedAuPlants">Recommended Australian Plants</a></li>
+                        <li class="innerListItems"><a href="products.html#plantsOnSale">On Sale</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="order.html">Order</a></li>
+                <li>Site Map</li>
+                <li>
+                    <a href="about.html">About us</a>
+                    <button class="dropDownMenu" title="Drop Down Menu">+</button>
+                    <ul class="innerList">
+                        <li class="innerListItems"><a href="about.html#membersList">Members</a></li>
+                        <li class="innerListItems"><a href="about.html#aboutGoodGums">About Good Gums</a></li>
+                        <li class="innerListItems"><a href="about.html#upcommingEvent">Upcoming Event</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="extention"></div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div id="footerBottom">
+
+            <p id="footerCenter">
+                <a href="https://validator.w3.org/" target="_blank">
+                    <img src="images/icons/valid_html5_gold.png" alt="HTML 5 Validated Site" />
+                </a>
+
+                <a href="https://jigsaw.w3.org/css-validator/" target="_blank">
+                    <img src="images/icons/valid_css3_blue.png" alt="CSS3 Validated Site" />
+                </a>
+
+                <span id="term">Copyrights 2021 Student - "Suketu Patel" @ LaTrobe University<sup>&#169;</sup> All Rights Reserved</span>
+
+                <span id="top"><a href="#topOfPage">Top</a></span>
+            </p>
+        </div>
+    </footer>
+
+    <!--Change the class name on click event of the bar menu -->
+    <script src="scripts/mainMenu.js"></script>
+    <script src="scripts/sitemap.js"></script>
+</body>
+</html>

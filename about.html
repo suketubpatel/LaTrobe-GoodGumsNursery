@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us - Good Gums Nursery - By Suketu Patel</title>
+
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/about_style.css" rel="stylesheet" />
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="topOfPage">
+    <!--Header part contain logo and company name and site navigation manu-->
+    <header>
+        <div id="mainHeading">
+            <a id="logoImage" href="index.html"><img src="images/Company_Logo/GoodGums-logo-sm.png" alt="Good Gums company logo" /></a>
+            <h1>Good Gums Nursery</h1>
+        </div>
+        <nav id="myHd_nav" class="hd_nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="order.html">Order</a>
+            <a href="sitemap.html">Site map</a>
+            <a class="active" href="about.html">About Us</a>
+
+            <!-- Bar menu clicked run javascript -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="members-container">    <!--Members images to display detils-->
+            <section id="membersList" class="line">
+                <!--Images of saff to click on it for information about them to display-->
+                <h2>Important members of Good Gums</h2>
+                <p>Click on the members images for their speciality...</p>
+                <div id="figContiner">
+                    <div class="imgDiv" id="imgDaisy">
+                        <img class="img300 figMember" src="images/staff/Daisy.jpg" alt="Image of Daisy" /><br /><span class="memberDetails">Daisy</span><br /><span id="daisy"></span>
+                    </div>
+
+                    <div class="imgDiv" id="imgJarred">
+                        <img class="img300 figMember" src="images/staff/Jarred.jpg" alt="Image of Jarred" /><br /><span class="memberDetails">Jarred</span><br /><span id="Jarred"></span>
+                    </div>
+
+                    <div class="imgDiv" id="imgIvy">
+                        <img class="img300 figMember" src="images/staff/Ivy.jpg" alt="Image of Ivy" /><br /><span class="memberDetails">Ivy</span><br /><span id="Ivy"></span>
+                    </div>
+
+                    <div class="imgDiv" id="imgRen">
+                        <img class="img300 figMember" src="images/staff/Ren.jpg" alt="Image of Ren" /><br /><span class="memberDetails">Ren</span><br /><span id="Ren"></span>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <div id="aboutGoodGums">
+            <!--Little bit of the company-->
+            <section class="content line">
+                <h2>Know more about Good Gums</h2>
+                <h3>History & Achievements</h3>
+                <p>
+                    The foundation nursery that started it all off is placed in meninx federal agency. meninx is found 25kms from the state capital CBD and permits our customers to simply visit United States still as our plant deliveries to succeed in their destinations quickly and with smallest delay. <br />
+                    The nursery has been in operation for over forty Years and is standard within the trade for its established gardens and delightful setting. it's a wonderful name at intervals the trade and is usually visited by overseas guests desirous to learn the way we tend to do things in Australia. <br />
+                    Firm has achived its position in Australias top most nurseries. It is very fast groving and keen to adopt new technologies. The goal of the firm is to reduce an effect of global warming in Australia by planting as mas as Australian trees as they can. <br />
+                </p>
+            </section>
+
+            <div id="news">
+                <section class="content line">
+                    <h3>News</h3>
+                    <p>
+                        Nursery is going to expand their branches out of Australia in mid of 2022. United States of America - New York, India - Mumbai will be the first two openings abroad. <br />
+
+                        The latest openings then after will be in South Africa to cover the whole Africa continent around the first quarter of 2023 and at the end of the year in Brazil to serve South America.
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <div id="upcommingEvent">
+            <!--Google map fatched for LaTrobe Bandoora campus-->
+            <section class="content">
+                <h3>Upcoming Event</h3>
+                <p>
+                    For university students to participate in our goal and improve their knowledge of Australian plans, our next upcoming event is on 01st of October 2021 between 9 am to 12 pm at LaTrobe University Bundoora campus. The invitation is open for all the universities students and their families.
+                </p>
+
+                <div id="locationSection">
+                    <h3>LaTrobe University Bundoora (Melbourne) location</h3>
+                    <iframe id="laTrobeFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.907348123611!2d145.048349715458!3d-37.72185257976914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad645e28a38a69b%3A0xf0456760532dac0!2sLa%20Trobe%20University%20Melbourne%20Campus!5e0!3m2!1sen!2sau!4v1631098418877!5m2!1sen!2sau" width="350" height="250" allowfullscreen="" loading="eager"></iframe>
+
+                    <address>
+                        <span id="addName">La Trobe University Melbourne</span><br />
+                        Plenty Road & Kingsbury Drive,<br />
+                        Bundoora,<br />
+                        Victoria 3086.<br /><br />
+
+                        <span>Phone:</span> 1300 528 762
+                    </address>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="footerBottom">
+           
+            <p id="footerCenter">
+                <a href="https://validator.w3.org/" target="_blank">
+                    <img src="images/icons/valid_html5_gold.png" alt="HTML 5 Validated Site" />
+                </a>
+
+                <a href="https://jigsaw.w3.org/css-validator/" target="_blank">
+                    <img src="images/icons/valid_css3_blue.png" alt="CSS3 Validated Site" />
+                </a>
+
+                <span id="term">Copyrights 2021 Student - "Suketu Patel" @ LaTrobe University<sup>&#169;</sup> All Rights Reserved</span>
+
+                <span id="top"><a href="#topOfPage">Top</a></span>
+            </p>
+        </div>
+    </footer>
+
+    <!--Change the class name on click event of the bar menu -->
+    <script src="scripts/mainMenu.js"></script>
+    <script src="scripts/about.js"></script>
+</body>
+</html>

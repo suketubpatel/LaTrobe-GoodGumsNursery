@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "20224262_cse2icx_assignment2", ".", "{88768393-20FA-4165-A066-5C460D92166B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52645"
+		Debug.AspNetCompiler.PhysicalPath = "E:\PCloud Documents\Study\La Trobe\Year 2\Term 1\Internet Client Engineering\Assessments\My Assessments\Assessment 02\20224262_cse2icx_assignment2\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52645\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52645"
+		Release.AspNetCompiler.PhysicalPath = "E:\PCloud Documents\Study\La Trobe\Year 2\Term 1\Internet Client Engineering\Assessments\My Assessments\Assessment 02\20224262_cse2icx_assignment2\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52645\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52645"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88768393-20FA-4165-A066-5C460D92166B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88768393-20FA-4165-A066-5C460D92166B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92099220-9BD9-48D1-91B2-EECFE8F71A14}
+	EndGlobalSection
+EndGlobal

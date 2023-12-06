@@ -1,0 +1,16 @@
+﻿body {
+    background-color: #edf2fb;
+    background-image: linear-gradient(#edf2fb, #abc4ff);
+}
+
+.fieldNames {
+    font-weight: bold;
+}
+
+th {
+    font-weight: bolder;
+    font-size: 20px;
+    border: 2px inset #F7FFF7;
+    background-color: #ffb278;
+    text-align: center;
+}

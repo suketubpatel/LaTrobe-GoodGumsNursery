@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank your - Good Gums Nursery - By Suketu Patel</title>
+
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/response_style.css" rel="stylesheet" />
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="topOfPage">
+    <!--Header part contain logo and company name and site navigation manu-->
+    <header>
+        <div id="mainHeading">
+            <a id="logoImage" href="index.html"><img src="images/Company_Logo/GoodGums-logo-sm.png" alt="Good Gums company logo" /></a>
+            <h1>Good Gums Nursery</h1>
+        </div>
+        <nav id="myHd_nav" class="hd_nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a class="active" href="order.html">Order</a>
+            <a href="sitemap.html">Site map</a>
+            <a href="about.html">About Us</a>
+
+            <!-- Bar menu clicked run javascript -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>Thank you for your order!</h2>
+
+            <div class="line">  <!--Customer details-->
+                <table>
+                    <tr>
+                        <th colspan="2">Your Details</th>
+                    </tr>
+                    <tr>
+                        <td class="fieldNames">Full Name</td>
+                        <td class="fieldValues" id="fullName"></td>
+                    </tr>
+                    <tr>
+                        <td class="fieldNames">Gender</td>
+                        <td class="fieldValues" id="gender"></td>
+                    </tr>
+                    <tr>
+                        <td class="fieldNames">Street</td>
+                        <td class="fieldValues" id="street"></td>
+                    </tr>
+                    <tr>
+                        <td class="fieldNames">City</td>
+                        <td class="fieldValues" id="city"></td>
+                    </tr>
+                    <tr>
+                        <td class="fieldNames">Country</td>
+                        <td class="fieldValues" id="country"></td>
+                    </tr>
+                    <tr>
+                        <td class="fieldNames">State</td>
+                        <td class="fieldValues" id="state"></td>
+                    </tr>
+                    <tr>
+                        <td class="fieldNames">Pin Code</td>
+                        <td class="fieldValues" id="pinCode"></td>
+                    </tr>
+                    <tr>
+                        <td class="fieldNames">Phone</td>
+                        <td class="fieldValues" id="phone"></td>
+                    </tr>
+                    <tr>
+                        <td class="fieldNames">Email</td>
+                        <td class="fieldValues" id="email"></td>
+                    </tr>
+                </table><br />
+            </div>
+            
+            <div><br />     <!--Order details-->
+                <h3>Below are your order summary</h3>
+                <table id="table">
+                    <tr class="row">
+                        <th>Selected Plant(s)</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="instructionHolder">
+                <br /><br />    <!--Special instructions-->
+                <p id="instruction"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footerBottom">
+
+            <p id="footerCenter">
+                <a href="https://validator.w3.org/" target="_blank">
+                    <img src="images/icons/valid_html5_gold.png" alt="HTML 5 Validated Site" />
+                </a>
+
+                <a href="https://jigsaw.w3.org/css-validator/" target="_blank">
+                    <img src="images/icons/valid_css3_blue.png" alt="CSS3 Validated Site" />
+                </a>
+
+                <span id="term">Copyrights 2021 Student - "Suketu Patel" @ LaTrobe University<sup>&#169;</sup> All Rights Reserved</span>
+
+                <span id="top"><a href="#topOfPage">Top</a></span>
+            </p>
+        </div>
+    </footer>
+
+    <!--Change the class name on click event of the bar menu -->
+    <script src="scripts/mainMenu.js"></script>
+    <script src="scripts/response.js"></script>
+</body>
+</html>

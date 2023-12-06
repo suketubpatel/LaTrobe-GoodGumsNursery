@@ -1,0 +1,13 @@
+﻿body {
+    background-color: #cfe8ef;
+    background-image: linear-gradient(#cfe8ef, #85c7de);
+}
+
+
+.sectionDetails > img {
+    float: left;
+}
+
+.sectionDetails > p {
+    margin: 0px;
+}

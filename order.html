@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order - Good Gums Nursery - By Suketu Patel</title>
+
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/order_style.css" rel="stylesheet" />
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body id="topOfPage">
+    <!--Header part contain logo and company name and site navigation manu-->
+    <header>
+        <div id="mainHeading">
+            <a id="logoImage" href="index.html"><img src="images/Company_Logo/GoodGums-logo-sm.png" alt="Good Gums company logo" /></a>
+            <h1>Good Gums Nursery</h1>
+        </div>
+        <nav id="myHd_nav" class="hd_nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a class="active" href="order.html">Order</a>
+            <a href="sitemap.html">Site map</a>
+            <a href="about.html">About Us</a>
+
+            <!-- Bar menu clicked run javascript -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <!--Customer info to fill up by customer-->
+            <h2>Place your order here:</h2>
+            <form action="response.html" method="get">
+                <fieldset id="customer_info">
+                    <legend>Customer Details: </legend>
+
+                    <label class="fontBold" for="fullName">Full Name: </label>
+                    <input type="text" id="fullName" name="fullName" maxlength="30" placeholder="Suketu Patel" autofocus title="Please provid your full name!" required /><br />
+
+                    <div id="redioGender">
+                        <label class="fontBold">Gender: </label>
+
+                        <input type="radio" id="genderMale" name="gender" value="Male" checked />
+                        <label for="genderMale">Male</label>
+                        <input type="radio" id="genderFemale" name="gender" value="Female" />
+                        <label for="genderFemale">Female</label>
+                        <input type="radio" id="genderOther" name="gender" value="Other" />
+                        <label for="genderOther">Other</label>
+                    </div>
+
+                    <label class="fontBold" for="street">Street: </label>
+                    <input type="text" id="street" name="street" maxlength="80" placeholder="00 Abc Street" title="Please provid your street number and name!" required /><br />
+
+                    <label class="fontBold" for="city">City: </label>
+                    <input type="text" id="city" name="city" maxlength="30" placeholder="Melbourne" title="Please provid your city name!" required /><br />
+
+                    <label class="fontBold" for="country">Country: </label>
+                    <input type="text" id="country" name="country" value="Australia" readonly />
+                    <br />
+
+                    <label class="fontBold" for="state">State: </label>
+                    <select id="state" name="state" title="Please choose your state!">
+                        <option value="ACT">ACT</option>
+                        <option value="NSW">NSW</option>
+                        <option value="NT">NT</option>
+                        <option value="QLD">QLD</option>
+                        <option value="SA">SA</option>
+                        <option value="TAS">TAS</option>
+                        <option value="VIC" selected>VIC</option>
+                        <option value="WA">WA</option>
+                    </select><br />
+
+                    <label class="fontBold" for="pinCode">Pin Code: </label>
+                    <input type="text" id="pinCode" name="pinCode" pattern="[0-9]{4,6}" title="Numeric number between 0 to 9 and 4 to 6 digits long" placeholder="3000" maxlength="6" required /><br />
+
+                    <label class="fontBold">Phone: </label>
+                    <label id="isd">+61</label>
+                    <input type="tel" name="phone" placeholder="0123456789" pattern="[0-9]{10,12}" title="Numeric number between 0 to 9 and 10 to 12 digits long" maxlength="12" required /><br />
+
+                    <label class="fontBold">Email: </label>
+                    <input type="email" name="email" maxlength="80" title="Please provide valid email i.e. 'email@example.com.au'" required />
+
+                </fieldset>
+
+
+
+                <fieldset id="order_info">
+                    <!--Order details-->
+                    <legend>Order Detail: </legend>
+
+                    <input id="silverPrincess" type="checkbox" name="silverPrincess" value="Silver Princess" />
+                    <label for="silverPrincess">Silver Princess</label>
+                    <input class="quantity" id="quntitySilverPrincess" type="number" name="quntitySilverPrincess" min="0" max="10" placeholder="0" value="0" /><br />
+
+                    <input id="snowGum" type="checkbox" name="snowGum" value="Snow Gum" />
+                    <label for="snowGum">Snow Gum</label>
+                    <input class="quantity" id="quntitySnowGum" type="number" name="quntitySnowGum" min="0" max="10" placeholder="0" value="0" /><br />
+
+                    <input id="redFloeringGum" type="checkbox" name="redFloeringGum" value="Red Floering Gum" />
+                    <label for="redFloeringGum">Red Flowering Gum</label>
+                    <input class="quantity" id="quntityRedFloeringGum" type="number" name="quntityRedFloeringGum" min="0" max="10" placeholder="0" value="0" /><br />
+
+                    <input id="crimsonBottlebrush" type="checkbox" name="crimsonBottlebrush" value="Crimson Bottlebrush" />
+                    <label for="crimsonBottlebrush">Crimson Bottlebrush</label>
+                    <input class="quantity" id="quntityCrimsonBottlebrush" type="number" name="quntityCrimsonBottlebrush" min="0" max="10" placeholder="0" value="0" /><br />
+
+                    <input id="happyWanderes" type="checkbox" name="happyWanderes" value="Happy Wanderes" />
+                    <label for="happyWanderes">Happy Wanderers</label>
+                    <input class="quantity" id="quntityHappyWanderes" type="number" name="quntityHappyWanderes" min="0" max="10" placeholder="0" value="0" /><br />
+
+                    <input id="goldenWattles" type="checkbox" name="goldenWattles" value="Golden Wattles" />
+                    <label for="goldenWattles">Golden Wattles</label>
+                    <input class="quantity" id="quntityGoldenWattles" type="number" name="quntityGoldenWattles" min="0" max="10" placeholder="0" value="0" /><br />
+
+                    <input id="lillyPill" type="checkbox" name="lillyPill" value="Lilly Pill" />
+                    <label for="lillyPill">Lilly Pill</label>
+                    <input class="quantity" id="quntityLillyPill" type="number" name="quntityLillyPill" min="0" max="10" placeholder="0" value="0" /><br />
+
+                    <input id="canberraBells" type="checkbox" name="canberraBells" value="Canberra Bells" />
+                    <label for="canberraBells">Canberra Bells</label>
+                    <input class="quantity" id="quntityCanberraBells" type="number" name="quntityCanberraBells" min="0" max="10" placeholder="0" value="0" /><br />
+
+                    <input id="grevilliaGirecracker" type="checkbox" name="revilliaGirecracker" value="Grevillia Girecracker" />
+                    <label for="grevilliaGirecracker">Grevillia Girecracker</label>
+                    <input class="quantity" id="quntityGrevilliaGirecracker" type="number" name="quntityGrevilliaGirecracker" min="0" max="10" placeholder="0" value="0" /><br />
+
+                    <input id="sillkyOak" type="checkbox" name="sillkyOak" value="Sillky Oak" />
+                    <label for="sillkyOak">Silky Oak</label>
+                    <input class="quantity" id="quntitySillkyOak" type="number" name="quntitySillkyOak" min="0" max="10" placeholder="0" value="0" /><br />
+
+                    <input id="waratah" type="checkbox" name="waratah" value="Waratah" />
+                    <label for="waratah">Waratah</label>
+                    <input class="quantity" id="quntityWaratah" type="number" name="quntityWaratah" min="0" max="10" placeholder="0" value="0" /><br />
+
+                    <input id="roseBoronia" type="checkbox" name="roseBoronia" value="Rose Boronia" />
+                    <label for="roseBoronia">Rose Boronia</label>
+                    <input class="quantity" id="quntityRoseBoronia" type="number" name="quntityRoseBoronia" min="0" max="10" placeholder="0" value="0" /><br />
+
+                    <input id="tallKangarooPaw" type="checkbox" name="tallKangarooPaw" value="Tall Kangaroo Paw" />
+                    <label for="tallKangarooPaw">Tall Kangaroo Paw</label>
+                    <input class="quantity" id="quntityTallKangarooPaw" type="number" name="quntityTallKangarooPaw" min="0" max="10" placeholder="0" value="0" /><br />
+
+                    <input id="rustyGum" type="checkbox" name="rustyGum" value="Rusty Gum" disabled />
+                    <label for="rustyGum">Rusty Gum</label>
+                    <input class="quantity" id="quntityRustyGum" type="number" name="quntityRustyGum" min="0" max="10" placeholder="Not Availabe" title="Nut Available" disabled /><br />
+
+                    <label class="fontBold" for="instruction">Special Instructions: </label><br />
+                    <textarea id="instruction" name="instruction" rows="4" cols="50" placeholder="Please provide any special instructions to pack and or delivered your order..."></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment Type: </legend> <!--Payment method to choose from-->
+                    <div id="radioPayment">
+                        <label for="visa"><img src="images/icons/visa.png" alt="Visa card payment" width="60" height="60" /></label>
+                        <input id="visa" type="radio" name="payment" value="visa" />
+
+                        <label for="master"><img src="images/icons/mastercard.png" alt="Master Card payment" width="60" height="60" /></label>
+                        <input id="master" type="radio" name="payment" value="master" />
+
+                        <label for="paypal"><img src="images/icons/paypal.png" alt="Paypal payment" width="60" height="60" /></label>
+                        <input id="paypal" type="radio" name="payment" value="paypal" checked />
+                    </div>
+                </fieldset>
+
+                <div id="submitForm">
+                    <!--Submit or reset the form by clicking Submit or Reset-->
+                    <input id="reset" type="reset" name="reset" value="Reset" />
+                    <input id="submit" type="submit" name="submit" value="Submit" />
+                </div>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <div id="footerBottom">
+
+            <p id="footerCenter">
+                <a href="https://validator.w3.org/" target="_blank">
+                    <img src="images/icons/valid_html5_gold.png" alt="HTML 5 Validated Site" />
+                </a>
+
+                <a href="https://jigsaw.w3.org/css-validator/" target="_blank">
+                    <img src="images/icons/valid_css3_blue.png" alt="CSS3 Validated Site" />
+                </a>
+
+                <span id="term">Copyrights 2021 Student - "Suketu Patel" @ LaTrobe University<sup>&#169;</sup> All Rights Reserved</span>
+
+                <span id="top"><a href="#topOfPage">Top</a></span>
+            </p>
+        </div>
+    </footer>
+
+    <!--Change the class name on click event of the bar menu -->
+    <script src="scripts/mainMenu.js"></script>
+
+</body>
+</html>

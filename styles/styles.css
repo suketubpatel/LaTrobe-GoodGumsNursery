@@ -1,0 +1,245 @@
+﻿/*------------------------ Common to all the pages ---------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.content {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: justify;
+}
+
+
+
+/******************** Header Section including main menu***********************/
+header {
+    background-color: #006d77;
+    color: #F7FFF7;
+    opacity: 100%;
+}
+
+
+.hd_nav {
+    overflow: hidden;
+    background-color: rgba(51,51,51,60%);
+}
+
+    .hd_nav a {
+        float: left;
+        display: block;
+        color: rgb(211,211,211);
+        text-align: center;
+        padding: 12px 20px;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+        .hd_nav a:hover {
+            background-color: #edf6f9;
+            color: black;
+        }
+
+        .hd_nav a.active {
+            background-color: #83c5be;
+            color: black;
+            pointer-events:none;    /*disable the current link*/
+
+        }
+
+    .hd_nav .icon {
+        display: none;
+    }
+
+@media screen and (max-width: 600px) {
+    .hd_nav a:not(:first-child) {
+        display: none;
+    }
+
+    .hd_nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hd_nav.responsive {
+        position: relative;
+    }
+
+        .hd_nav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .hd_nav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+}
+
+
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+    text-align: left;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 1; 
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+h3 ~ p {
+    margin: 0;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+#address {
+    border: 6px groove #F7FFF7;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.line {
+    border-bottom: 1px dashed #343434;
+    overflow: hidden;
+    padding: 25px 0;
+}
+
+.img300 { /* Each sections main images*/
+    width: 300px;
+    height: 220px;
+    border: 5px solid white;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+
+a {
+    color: #F7FFF7;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+
+
+table {     /*table border*/
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tFooterText {
+    text-align: center;
+    font-weight: bold;
+}
+
+.currency {
+    text-align: right;
+}
+
+/*--------------------- Figure, Picture, Frame, Icons -----------------------*/
+figure {
+    width: 320px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.socialIcon { /* Socail icons and payment icon size*/
+    width: 45px;
+    height: 30px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.fontBold {
+    font-weight: bold;
+}
+
+/*------------------------- Footer Section ----------------------------*/
+
+
+#footerImges img {
+    width: 64px;
+    height: 64px;
+}
+
+
+footer {
+    color: #F7FFF7;
+    margin: 0;
+}
+
+#footerBottom {
+    margin: 0;
+    background-color: rgba(51,51,51,80%);
+}
+
+
+/*------------------------- Minimum screen  size 600px ----------------------------*/
+
+@media screen and (min-width: 600px) {
+
+    header {
+        position: sticky;
+        top: 0;
+    }
+
+    h1 {
+        float: right;
+    }
+
+    #footerCenter {
+        margin: 0;
+        padding: 10px;
+    }
+
+    #footerCenter #term {
+        padding-left: 25%;
+    }
+
+    #footerCenter #top {
+        float: right;
+    }
+}
+

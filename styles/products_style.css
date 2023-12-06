@@ -1,0 +1,16 @@
+﻿body {
+    background-color: #ebf1f7;
+    background-image: linear-gradient(#ebf1f7, #F7AB5F);
+}
+
+.figPro {
+    float:left;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.rP {
+    float: left;
+}

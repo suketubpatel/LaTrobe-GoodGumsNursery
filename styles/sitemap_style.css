@@ -1,0 +1,44 @@
+﻿body {
+    width: 100vw;
+    background-color: #91d6f5;
+}
+
+section {
+    margin: 30px;
+}
+
+ul,li{
+    margin: 20px;
+}
+
+.dropDownMenu {
+    margin: 10px;
+    width: 20px;
+    padding: 0 5px 0 5px;
+    border: 1px inset #a5a5a5;
+    padding: 5px;
+    background-color: #9dc69d;
+}
+
+    .dropDownMenu:hover {
+        cursor: pointer;
+        background-color: #90b590;
+    }
+
+.innerList {
+    display: none;
+}
+
+#extention {
+    height: 318px;
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+}
+
+a {
+    color: #343434;
+}
